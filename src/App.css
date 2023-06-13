@@ -1,1 +1,28 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+html {
+  font-size: 62.5%; /* 10px */
+}
+body {
+  font-size: 2rem;
+}
+
+
+body{
+    background-image: url(components/css/img/fondo3.png);
+    background-repeat: no-repeat ;
+    background-attachment:  fixed;
+    background-position:  center;
+    background-size: 70%;
+    background-color: rgb(201, 78, 55);
+    margin: auto;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+   
+}
 

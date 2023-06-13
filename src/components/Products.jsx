@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import './css/Products.css' 
 
 
 const Products = () => {
@@ -22,12 +23,15 @@ totalItems()
 
   return data.map((product) => {
     return (
-      <div className="card" key={product.id}>
-        <img src={`${product.image}`} alt="img-product-card" />
+      
+      <div className="card" key={product.id} style={{ width: '48rem' }}>
+        <img src={`${product.image}`} style={{ width: '48rem' }} alt="img-product-card" />
         <h3>{product.title}</h3>
         <h4>${product.price}</h4>
         <button>Comprar</button>
       </div>
+
+      
     );
   }
   
