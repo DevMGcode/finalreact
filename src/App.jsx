@@ -7,14 +7,17 @@ import './App.css'
 
 
 function App() { 
+
+   const API = 'https://fakestoreapi.com';
     return (
      
       <BrowserRouter>
+      
       <Navegacion/>
         <Routes>
           
           <Route path="/" element={<Products/>}/>
-          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/dashboard" element={<Dashboard API ={API}/>}/>
           
         </Routes>
         </BrowserRouter>
