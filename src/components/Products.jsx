@@ -23,12 +23,13 @@ totalItems()
 
   return data.map((product) => {
     return (
-      
-      <div className="card" key={product.id} style={{ width: '48rem' }}>
-        <img src={`${product.image}`} style={{ width: '48rem' }} alt="img-product-card" />
-        <h3>{product.title}</h3>
-        <h4>${product.price}</h4>
-        <button>Comprar</button>
+      <div className="contenedor" key={product.id}>
+        <div className="card"  style={{ width: '25rem' }}>
+          <img src={`${product.image}`} style={{ width: '25rem' }} alt="img-product-card" />
+          <h3>{product.title}</h3>
+          <h4>${product.price}</h4>
+          <button>Comprar</button>
+        </div>
       </div>
 
       

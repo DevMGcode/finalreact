@@ -18,11 +18,92 @@ body{
     background-position:  center;
     background-size: 70%;
     background-color: rgb(201, 78, 55);
-    margin: auto;
     display: flex;    
     justify-content: center;
     align-items: center;
     
-   
 }
 
+
+.navegacion {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  padding: 2rem;
+  width: 130rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  margin: auto;
+  
+}
+
+.letra{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-self: center;  
+}
+
+.letra:hover{
+
+  text-decoration: none;
+  color: rgb(230, 111, 48);
+  align-self: center;
+  text-shadow: 2rem 2rem 4rem  ; 
+  transition: all 300ms; 
+}
+
+.navegacion nav {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+
+
+.contenedor {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  max-width: 59.8rem;
+  /* margin: auto; */
+  text-align: center;
+  margin-left: 10%;
+}
+
+.card {
+  
+  margin: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  padding: 1.4rem;
+}
+
+.card{
+  text-align: center;
+margin-bottom: 2rem;
+border: 2px solid #e9914d6a;
+border-radius: 1rem;
+background-color: #d78c5248;
+width:10rem ;
+}
+
+.card img{
+  border-radius: 10%;
+}
+
+.card:hover {
+  
+  box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.4); 
+  transform: translateY(-3%);
+  }
+  
+  .card img{
+    
+    width: 100%;
+    height: 28rem;
+  }
