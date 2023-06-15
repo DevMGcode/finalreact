@@ -13,7 +13,7 @@ const IngresosTotales = (props) => {
           `${data.data.API}/products/${productId}`
         );
         const producto = response.data;
-        return producto.price;
+        return producto.price ;
       } catch (error) {
         alert(
           `Error al obtener el precio del producto ${productId}: ${error.message}`

@@ -1,26 +1,34 @@
 import { 
     Chart as ChartJS,
-    CategoryScale,
+    ArcElement,
+    Tooltip,
+    Legend
+
+   /*  CategoryScale,
     LinearScale,
     PointElement,
-    LineElement,
+    PieElement,
     Title,
     Tooltip,
     Legend,
-    Filler
+    Filler */
   } from 'chart.js'
   
-  import {Line} from 'react-chartjs-2'
+  import {Doughnut} from 'react-chartjs-2'
   
   ChartJS.register(
-    CategoryScale,
+
+    ArcElement,
+    Tooltip,
+    Legend
+    /* CategoryScale,
     LinearScale,
     PointElement,
-    LineElement,
+    PieElement,
     Title,
     Tooltip,
     Legend,
-    Filler
+    Filler */
   )
 
 
@@ -33,6 +41,7 @@ const Masvendidos = (props) => {
 
     dataCart.forEach(entry => {
         entry.products.forEach(product => {
+            
             const productId = product.productId;
             const quantity = product.quantity;
 
@@ -59,6 +68,8 @@ const Masvendidos = (props) => {
 
     const options = {
       responsive: true,
+      color:'white'
+      /* fill:true */ //area por debajo
     }
 
      // Crear el objeto de datos del gráfico
@@ -70,6 +81,7 @@ const Masvendidos = (props) => {
         data: quantities,
         backgroundColor: generateRandomColors(productIds.length),
         hoverBackgroundColor: generateRandomColors(productIds.length),
+        pointRadius:6 //tamaño puntos
       },
     ],
   };
@@ -97,7 +109,7 @@ const Masvendidos = (props) => {
     return (
     <div>
     <h2>PRODUCTOS MAS VENDIDOS</h2>
-    <Line data={chartData} options={options}/>
+      <Doughnut data={chartData} options={options} />
   </div>
     )
 
