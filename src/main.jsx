@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
+import {imag1} from '../src/assets/img/banner1.png';
+import {imag2} from '../src/assets/img/banner2.png';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
@@ -15,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../src/assets/img/banner1.png"
+            src={imag1}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -26,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../src/assets/img/banner1.png"
+            src={imag2}
             alt="Second slide"
           />
           <Carousel.Caption>
