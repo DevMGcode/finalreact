@@ -17,6 +17,7 @@
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  width: 150%;
 }
 
 .item-sell {
@@ -32,6 +33,7 @@
 /* Estilos para los textos dentro de los items */
 .item div {
   color: #333333;
+  font-size: 2rem;
 }
 
 .item p {
@@ -41,7 +43,7 @@
 /* Estilos para las imágenes */
 .tamañoimg {
   width: 60%; /* Ajusta el ancho de las imágenes según sea necesario */
-  margin-left: 20%; /* Centra las imágenes horizontalmente */
+  margin-left: 50%; /* Centra las imágenes horizontalmente */
   margin-top: 20px; /* Espacio superior entre las imágenes y el contenido */
   margin-bottom: 5%;
 }

@@ -24,6 +24,7 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(215, 140, 82, 0.9); /* Fondo naranja con transparencia */
 }
 
 .card img {
@@ -47,7 +48,7 @@
     outline: 0;
     padding: 1rem;
     color: rgb(13, 13, 13);
-    background-color: #d47924;
+    background-color: #d47924; /* Color de fondo del botón */
     text-align: center;
     cursor: pointer;
     width: 100%;
