@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../src/components/css/img/banner1.png"
+            src="../src/assets/img/banner1.png"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../src/components/css/img/banner2.png"
+            src="../src/assets/img/banner1.png"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <p>Encuentra lo que necesitas al mejor precio</p>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* Agrega más items según necesites */}
+        
       </Carousel>
   </React.StrictMode>,
 )
