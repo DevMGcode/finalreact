@@ -1,4 +1,52 @@
+/* Estilos generales para el dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  gap: 60px;
+  padding: 50px;
+}
 
+.contenedor2 {
+  width: 50%;
+}
+
+/* Estilos para cada elemento del dashboard */
+.item {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.item-sell {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20rem;
+  margin-bottom: 30rem;
+}
+
+/* Estilos para los textos dentro de los items */
+.item div {
+  color: #333333;
+}
+
+.item p {
+  color: #666666;
+}
+
+/* Estilos para las imágenes */
+.tamañoimg {
+  width: 60%; /* Ajusta el ancho de las imágenes según sea necesario */
+  margin-left: 20%; /* Centra las imágenes horizontalmente */
+  margin-top: 20px; /* Espacio superior entre las imágenes y el contenido */
+  margin-bottom: 5%;
+}
+
+/* Estilos para el spinner */
 .spinner-container {
   display: flex;
   justify-content: center;
@@ -20,103 +68,12 @@
   100% { transform: rotate(360deg); }
 }
 
-
-
-.dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;
-    /* background-color: rgb(49, 54, 82); */
-    /* color: white; */
-  }
-  
-  .item {
-    width: 40%;
-    margin-bottom: 20px;
-    text-align: center;
-   
-  }
-
-  .item-sell {
-    width: 40%;
-    margin-top: 12rem;
-    height: 900px;
-    margin-bottom: 20px;
-    text-align: center;
-    
-   
-  }
-  
-
-.PrecioPromedio{
-    border: 1px solid rgb(230, 48, 48);
-    width: 200%;
-    height: 20%;
-    font-size: 30%;
-    background-color: rgb(12, 16, 37);
-
-    
-}
-
-.MasVendidos{
-    border: 1px solid red;
-    width: 60%;
-    height: 50%;
-    font-size: 30%;
-}
-
-.IngresosTotales{
-    border: 1px solid red;
-    width: 200%;
-    height: 20%;
-    font-size: 90%;
-    padding-top: 2%;
-    background-color: rgb(12, 16, 37);
-    
-    
-}
-
-.TotalPedidos{
-    border: 1px solid red;
-    width: 200%;
-    height: 20%;
-    font-size: 30%;
-    background-color: rgb(12, 16, 37);
-    
-}
-
-.TotalProductos{
-    border: 1px solid red;
-    width: 200%;
-    height: 20%;
-    font-size: 30%;
-    background-color: rgb(12, 16, 37);
-}
-
-.tamañoimg{
-  align-self: center;
-  width: 30%;
-  margin-left: 20%;
-}
-
-@media (max-width:768px){
-
-  .item-sell {
-    width: 80%;
-    margin-top: 12rem;
-    height: 900px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-}
-@media (max-width:390px){
-
-  .item-sell {
-    width: 100%;
-    margin-top: 12rem;
-    height: 900px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+/* Estilos para los textos dentro de los cuadros de texto */
+.texto {
+  border: 1px solid rgb(230, 48, 48); /* Color del borde */
+  width: 100%; /* Ancho del cuadro de texto al 100% */
+  height: 80px; /* Altura del cuadro de texto */
+  font-size: 20px; /* Tamaño de la fuente */
+  padding: 10px; /* Espaciado interno */
+  background-color: rgb(12, 16, 37); /* Color de fondo */
 }

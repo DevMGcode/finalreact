@@ -4,7 +4,7 @@ const TotalProductos = (props) => {
 
   return (
     <div className="TotalProductos">
-      <h1> TOTAL PRODUCTOS: {TotalProductos}</h1>
+      <div> TOTAL PRODUCTOS: {TotalProductos}</div>
     </div>
   );
 };

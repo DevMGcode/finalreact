@@ -41,35 +41,36 @@ const Dashboard = (props) => {
   }, []);
 
   return (
-    <div className="dashboard">
-      {loading ? (
-        <div className="spinner-container">
-          <div className="spinner"></div>
-        </div>
-      ) : (
-        <div className="contenedor2">
-          <img src={ingreso} className="tamañoimg" alt="" />
-          <div className="item">
-            <IngresosTotales data={data} />
-          </div>
-          <img src={productos} className="tamañoimg" alt="" />
-          <div className="item">
-            <TotalProductos dataProducts={dataProducts} />
-          </div>
-          <img src={promedio} className="tamañoimg" alt="" />
-          <div className="item">
-            <PrecioPromedio dataProducts={dataProducts} />
-          </div>
-          <img src={orden} className="tamañoimg" alt="" />
-          <div className="item">
-            <TotalPedidos dataCart={dataCart} />
-          </div>
-        </div>
-      )}
-      <div className="item-sell">
-        <MasVendidos dataCart={dataCart} />
+<div className="dashboard">
+  {loading ? (
+    <div className="spinner-container">
+      <div className="spinner"></div>
+    </div>
+  ) : (
+    <div className="contenedor2">
+      <img src={ingreso} className="tamañoimg" alt="" />
+      <div className="item">
+        <IngresosTotales data={data} />
+      </div>
+      <img src={productos} className="tamañoimg" alt="" />
+      <div className="item">
+        <TotalProductos dataProducts={dataProducts} />
+      </div>
+      <img src={promedio} className="tamañoimg" alt="" />
+      <div className="item">
+        <PrecioPromedio dataProducts={dataProducts} />
+      </div>
+      <img src={orden} className="tamañoimg" alt="" />
+      <div className="item">
+        <TotalPedidos dataCart={dataCart} />
       </div>
     </div>
+  )}
+  <div className="item-sell">
+    <MasVendidos dataCart={dataCart} />
+  </div>
+</div>
+
   );
 };
 

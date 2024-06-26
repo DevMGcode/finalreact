@@ -3,7 +3,7 @@ import  Dashboard  from "./components/dashboard/Dashboard";
 import Navegacion  from "./components/Navegacion";
 import Products from './components/products'
 import './App.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() { 
@@ -12,15 +12,18 @@ function App() {
     return (
      
       <BrowserRouter>
+      <Navegacion />
+
       
-      <Navegacion/>
+      
+
+      <div className="container mt-5">
         <Routes>
-          
-          <Route path="/" element={<Products/>}/>
-          <Route path="/dashboard" element={<Dashboard API ={API}/>}/>
-          
+          <Route path="/" element={<Products />} />
+          <Route path="/dashboard" element={<Dashboard API={API} />} />
         </Routes>
-        </BrowserRouter>
+      </div>
+    </BrowserRouter>
       
     )
 }

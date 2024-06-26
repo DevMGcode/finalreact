@@ -1,12 +1,10 @@
+/* Reset y estilos base */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,29 +12,36 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* Estilos para enlaces */
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 a:hover {
   color: #535bf2;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
   min-width: 320px;
   min-height: 100vh;
-  padding: 0;
 }
 
+/* Estilos para encabezados */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center; /* Centra el texto */
+  margin-bottom: 1rem; /* Añade espacio inferior */
 }
 
+/* Estilos para botones */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -45,6 +50,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #ffffff; /* Color de texto blanco */
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -56,6 +62,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Estilos para modo claro */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -66,5 +73,6 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #000000; /* Color de texto oscuro */
   }
 }

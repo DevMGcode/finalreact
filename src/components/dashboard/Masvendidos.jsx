@@ -108,7 +108,7 @@ const Masvendidos = (props) => {
 
     return (
     <div>
-    <h2>PRODUCTOS MAS VENDIDOS</h2>
+    <h4>PRODUCTOS MAS VENDIDOS</h4>
       <Doughnut data={chartData} options={options} />
   </div>
     )
